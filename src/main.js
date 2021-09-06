@@ -3,7 +3,16 @@ import NAV from "./utils/NAV";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import { Button, Layout, Drawer, Menu, Icon, Radio } from "ant-design-vue";
+import {
+  Button,
+  Layout,
+  Drawer,
+  Menu,
+  Icon,
+  Radio,
+  Form,
+  Input,
+} from "ant-design-vue";
 import Authorized from "./components/Authorized";
 import Auth from "./directives/auth";
 
@@ -16,6 +25,8 @@ Vue.use(Menu);
 Vue.use(Icon);
 Vue.use(Drawer);
 Vue.use(Radio);
+Vue.use(Form);
+Vue.use(Input);
 Vue.component("Authorized", Authorized);
 Vue.use(Auth);
 
